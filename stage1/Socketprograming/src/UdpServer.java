@@ -16,7 +16,10 @@ public class UdpServer {
             while (true) {
                 DatagramPacket request = new DatagramPacket(buffer, buffer.length);
                 aSocket.receive(request);
-                DatagramPacket reply = new DatagramPacket(request.getData(), request.getLength(), request.getAddress(),
+                String str = new String(request.getData());
+                str = new StringBuffer(str).reverse().toString().toUpperCase();
+                System.out.println(str);
+                DatagramPacket reply = new DatagramPacket(str.getBytes(), str.length(), request.getAddress(),
                         request.getPort());
                 aSocket.send(reply);
 
