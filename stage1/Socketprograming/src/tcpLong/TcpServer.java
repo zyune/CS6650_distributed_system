@@ -11,7 +11,7 @@ public class TcpServer {
         }
         int portNumber = Integer.parseInt(args[0]);
         boolean listening = true;
-
+        System.out.println("listening on port" + portNumber);
         try (ServerSocket serverSocket = new ServerSocket(portNumber)) {
             while (listening) {
                 new TcpServerThread(serverSocket.accept()).start();
