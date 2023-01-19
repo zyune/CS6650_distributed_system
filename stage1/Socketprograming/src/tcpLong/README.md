@@ -1,6 +1,6 @@
 ## implement a TCP server that does not lose connection, with java thread
 
-it is possible to implement a TCP server that does not shut down after a client sends a message. The server can keep listening for new connections and continue to communicate with multiple clients simultaneously.
+Here's how to implement a TCP server that does not shut down after a client sends a message. The server can keep listening for new connections and continue to communicate with multiple clients simultaneously.
 Here's an example of a simple TCP server that listens for new connections and echoes back any messages received from clients without shutting down:
 
 ```java
