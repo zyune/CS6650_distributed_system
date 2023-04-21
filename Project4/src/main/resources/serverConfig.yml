@@ -1,0 +1,6 @@
+# servername: hostname:port
+server1: localhost:10000
+server2: localhost:10001
+server3: localhost:10002
+server4: localhost:10003
+server5: localhost:10004
